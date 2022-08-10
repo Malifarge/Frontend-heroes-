@@ -13,5 +13,9 @@ body{
 
 .overflow{
     overflow:scroll;
-    height: 800px;
+    height: 550px;
+}
+
+.border{
+    border-bottom: 2px dashed;
 }
