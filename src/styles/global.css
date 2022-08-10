@@ -1,0 +1,17 @@
+
+body{
+    padding: 20px;
+}
+
+.flex{
+    display: flex;
+}
+
+.g-30{
+    gap: 30px;
+}
+
+.overflow{
+    overflow:scroll;
+    height: 800px;
+}
