@@ -104,29 +104,34 @@ const Cardpres = (props) =>{
 
     return (
         <>
-        {status ? <div className='border' style={isAlive ? {borderColor: "black" }: {borderColor: "red"}}>
-            <div className='heroeImg' style={{
+        {status ? <><div className='border  flex tel g-30 center' style={isAlive ? {borderColor: "black" }: {borderColor: "red"}}>
+            <div className='heroeImg flex' style={{
                 backgroundImage: `url(${image})`
             }}></div>
-            <h2 style={{
-                textDecorationColor: `${color}`
-            }}>{name}</h2>
-            <p>{age} ans</p>
+           <div>
+                <h2 style={{
+                    textDecorationColor: `${color}`
+                }}>{name}</h2>
+                <p>{age} ans</p>
+           </div>
 
-            <h2><Link to={`/${slug}/power`}>Power</Link></h2>
+            <div>
+                <h2><Link to={`/${slug}/power`}>Power</Link></h2>
 
-            <ul>
-                {power.map(pow=>{
-                    return <li key={pow}>{pow}</li>
-                })}
-            </ul>
+                <ul>
+                    {power.map(pow=>{
+                        return <li key={pow}>{pow}</li>
+                    })}
+                </ul>
+            </div> 
 
-            <div  className="flex s-b mb-10">
+        </div> 
+        <div  className="flex s-b mb-10">
                 <button onClick={handleDeleteClick}>Delete</button>
                 <button onClick={handleEditClick}>Edit</button>
             </div>
-
-        </div> : <form className="flex clmn g-30" onSubmit={handleSubmit}>
+            </>
+            : <form className="flex clmn g-30" onSubmit={handleSubmit}>
 
             <div className="flex g-30">
                 <label htmlFor="slug">slug</label>
