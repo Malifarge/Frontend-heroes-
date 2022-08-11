@@ -109,38 +109,38 @@ const Home = () =>{
 
                 <form className="flex clmn g-30 center" onSubmit={handleSubmit}>
 
-                    <div className="flex s-b g-30">
+                    <div className="flex s-b g-30 tel">
                         <label htmlFor="slug">slug</label>
                         <input type="text" onChange={handlechangeSlug} name="slug" />
                     </div>
 
-                    <div className="flex s-b g-30">
+                    <div className="flex s-b g-30 tel ">
                         <label htmlFor="name">name</label>
                         <input type="text" onChange={handlechangeName} name="name" />
                     </div>
 
-                    <div className="flex s-b g-30">
+                    <div className="flex s-b g-30 tel">
                         <label htmlFor="power">power</label>
                         <input type="text" value={powerNew} onChange={handlechangePower} name="power" />
                         <button onClick={handleArrayPowerClick} type="button">+</button>
                     </div>
 
-                    <div className="flex s-b g-30">
+                    <div className="flex s-b g-30 tel">
                         <label htmlFor="color">color</label>
                         <input type="text" onChange={handlechangeColor} name="color" />
                     </div>
 
-                    <div className="flex s-b g-30">
+                    <div className="flex s-b g-30 tel">
                         <label htmlFor="isAlive">isAlive</label>
                         <input type="checkbox" name="isAlive" onChange={handleCheck} />
                     </div>
 
-                    <div className="flex s-b g-30">
+                    <div className="flex s-b g-30 tel">
                         <label htmlFor="age">age</label>
                         <input type="text" onChange={handlechangeAge} name="age" />
                     </div>
 
-                    <div className="flex s-b g-30">
+                    <div className="flex s-b g-30 tel">
                         <label htmlFor="image">image</label>
                         <input type="text" onChange={handlechangeImage} name="image" />
                     </div>

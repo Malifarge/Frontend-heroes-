@@ -110,7 +110,7 @@ const Cardpres = (props) =>{
             }}></div>
             <h2 style={{
                 textDecorationColor: `${color}`
-            }}><Link to={`/${slug}`}>{name}</Link></h2>
+            }}>{name}</h2>
             <p>{age} ans</p>
 
             <h2><Link to={`/${slug}/power`}>Power</Link></h2>
