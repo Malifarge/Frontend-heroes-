@@ -3,8 +3,17 @@ body{
     padding: 20px;
 }
 
+a{
+    color: black;
+    text-decoration: none;
+}
+
 .flex{
     display: flex;
+}
+
+.clmn{
+    flex-direction: column;
 }
 
 .g-30{
@@ -18,4 +27,36 @@ body{
 
 .border{
     border-bottom: 2px dashed;
+}
+
+.s-b{
+    justify-content: space-between;
+}
+
+.w-300{
+    width: 300px;
+}
+
+button{
+    width: 120px;
+    height: 30px;
+    border-radius: 50px;
+    background: #242121 ;
+    color: rgba(255, 255, 255, 0.689);
+    border: 3px solid #FC7987;
+    margin-bottom: 10px;
+}
+
+button:hover{
+    color: white;
+    text-decoration: underline #FC7987;
+    cursor: pointer;
+}
+
+input{
+    height: 20px;
+}
+
+form div {
+    align-items: center;
 }

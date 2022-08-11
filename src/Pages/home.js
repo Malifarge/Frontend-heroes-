@@ -14,7 +14,6 @@ const Home = () =>{
         const response = await fetch("http://localhost:5000/heroes")
         const data = await response.json()
         setHeroes(data)
-        console.log(data);
       }
 
     useEffect(()=>{
