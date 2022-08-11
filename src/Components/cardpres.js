@@ -13,7 +13,7 @@ const Cardpres = (props) =>{
     const [ageNew, setAgeNew] = useState(age)
     const [imageNew, setImageNew] = useState(image)
     const [colorNew, setColorNew] = useState(color)
-    const [isAliveNew, setIsAliveNew] = useState(false)
+    const [isAliveNew, setIsAliveNew] = useState(isAlive)
     const [arrayPowerNew, setArrayPowerNew] = useState([])
 
 
@@ -151,7 +151,7 @@ const Cardpres = (props) =>{
 
             <div className="flex g-30">
                 <label htmlFor="isAlive">isAlive</label>
-                <input type="checkbox" name="isAlive" onChange={handleCheck} />
+                {isAliveNew ? <input type="checkbox" name="isAlive" onChange={handleCheck} checked /> : <input type="checkbox" name="isAlive" onChange={handleCheck} />}
             </div>
             
             <div className="flex g-30">
