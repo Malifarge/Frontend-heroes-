@@ -16,6 +16,10 @@ a{
     flex-direction: column;
 }
 
+.center{
+    align-items: center;
+}
+
 .g-30{
     gap: 30px;
 }

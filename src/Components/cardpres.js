@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 const Cardpres = (props) =>{
@@ -101,12 +101,6 @@ const Cardpres = (props) =>{
     navigate(`/${slugNew}`)
     window.location.reload(false)
     }
-
-    // useEffect(()=>{
-    //     if(status && slugNew !== ""){
-    //             window.location.reload(false)
-    //     }
-    // },[status])
 
     return (
         <>
