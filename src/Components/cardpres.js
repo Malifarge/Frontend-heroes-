@@ -7,13 +7,13 @@ const Cardpres = (props) =>{
     const {slug,name,power,age,image,color,isAlive} = props.hero
     const navigate = useNavigate()
     const [status, setStatus] = useState(true)
-    const [slugNew, setSlugNew] = useState("")
-    const [nameNew, setNameNew] = useState("")
-    const [powerNew, setPowerNew] = useState("")
-    const [ageNew, setAgeNew] = useState("")
-    const [imageNew, setImageNew] = useState("")
-    const [colorNew, setColorNew] = useState("")
-    const [isAliveNew, setIsAliveNew] = useState("")
+    const [slugNew, setSlugNew] = useState(slug)
+    const [nameNew, setNameNew] = useState(name)
+    const [powerNew, setPowerNew] = useState(power)
+    const [ageNew, setAgeNew] = useState(age)
+    const [imageNew, setImageNew] = useState(image)
+    const [colorNew, setColorNew] = useState(color)
+    const [isAliveNew, setIsAliveNew] = useState(false)
     const [arrayPowerNew, setArrayPowerNew] = useState([])
 
 
@@ -130,12 +130,12 @@ const Cardpres = (props) =>{
 
             <div className="flex g-30">
                 <label htmlFor="slug">slug</label>
-                <input type="text" onChange={handlechangeSlug} name="slug" />
+                <input type="text" value={slugNew} onChange={handlechangeSlug} name="slug" />
             </div>
 
             <div className="flex g-30">
                 <label htmlFor="name">name</label>
-                <input type="text" onChange={handlechangeName} name="name" />
+                <input type="text" value={slugNew} onChange={handlechangeName} name="name" />
             </div>
 
             <div className="flex g-30">
@@ -146,7 +146,7 @@ const Cardpres = (props) =>{
             
             <div className="flex g-30">
                 <label htmlFor="color">color</label>
-                <input type="text" onChange={handlechangeColor} name="color" />
+                <input type="text" value={colorNew} onChange={handlechangeColor} name="color" />
             </div>
 
             <div className="flex g-30">
@@ -156,12 +156,12 @@ const Cardpres = (props) =>{
             
             <div className="flex g-30">
                 <label htmlFor="age">age</label>
-                <input type="text" onChange={handlechangeAge} name="age" />
+                <input type="text" value={ageNew} onChange={handlechangeAge} name="age" />
             </div>
 
             <div className="flex g-30">
                 <label htmlFor="image">image</label>
-                <input type="text" onChange={handlechangeImage} name="image" />
+                <input type="text" value={imageNew} onChange={handlechangeImage} name="image" />
             </div>
             
             <button type="submit">Submit</button>
