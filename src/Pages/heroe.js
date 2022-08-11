@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 
 import { useState, useEffect} from "react";
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import Cardpres from "../Components/cardpres";
 
 const Heroe = () =>{
@@ -20,7 +20,7 @@ const Heroe = () =>{
 
     return (
         <section>
-            <h1>Hero</h1>
+            <h1><Link to={`/`}>Hero</Link></h1>
             {hero && <Cardpres hero={hero}/>}
         </section>
     )

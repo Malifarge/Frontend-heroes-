@@ -17,7 +17,7 @@ const Card = (props) =>{
             }}><Link to={`/${slug}`}>{name}</Link></h2>
             <p>{age} ans</p>
 
-            <h2>Power</h2>
+            <h2><Link to={`/${slug}/power`}>Power</Link></h2>
 
             <ul>
                 {power.map(pow=>{

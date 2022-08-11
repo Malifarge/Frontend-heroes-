@@ -113,7 +113,7 @@ const Cardpres = (props) =>{
             }}><Link to={`/${slug}`}>{name}</Link></h2>
             <p>{age} ans</p>
 
-            <h2>Power</h2>
+            <h2><Link to={`/${slug}/power`}>Power</Link></h2>
 
             <ul>
                 {power.map(pow=>{
@@ -121,7 +121,7 @@ const Cardpres = (props) =>{
                 })}
             </ul>
 
-            <div  className="flex s-b">
+            <div  className="flex s-b mb-10">
                 <button onClick={handleDeleteClick}>Delete</button>
                 <button onClick={handleEditClick}>Edit</button>
             </div>

@@ -4,8 +4,13 @@ body{
 }
 
 a{
-    color: black;
+    color: rgba(0, 0, 0, 0.605);
     text-decoration: none;
+}
+
+a:hover{
+    color: black;
+    text-decoration: 2px underline #FC7987;
 }
 
 .flex{
@@ -48,6 +53,9 @@ button{
     background: #242121 ;
     color: rgba(255, 255, 255, 0.689);
     border: 3px solid #FC7987;
+}
+
+.mb-10{
     margin-bottom: 10px;
 }
 
