@@ -8,7 +8,7 @@ const Card = (props) =>{
     const {slug,name,power,age,image,color,isAlive} = props.heroe
 
     return (
-        <div className='border ' style={isAlive ? {borderColor: "black" }: {borderColor: "red"}}>
+        <div className='border w-300' style={isAlive ? {borderColor: "black" }: {borderColor: "red"}}>
             <div className='heroeImg w-300' style={{
                 backgroundImage: `url(${image})`
             }}></div>
